@@ -1,0 +1,69 @@
+#banner{
+    background: url('../img/aboutUs.png') no-repeat;
+    background-size: cover;
+}
+.contactInformation-con>div:nth-child(1){
+    text-align: center;
+    margin: 6% 0;
+}
+.myTabContent-con li{
+    font: 18px 'fzlth--gb1-4';
+    color:#333333;
+    margin-bottom: 50px;
+}
+.myTabContent-con li span{
+    font: 22px 'fzlth--gb1-4';
+    color:#0acec8;
+}
+.myTabContent-con div:nth-child(2) ul{
+    margin-left: 10%;
+}
+.myTabContent-con div:nth-child(3){
+    text-align: right;
+}
+.myTabContent-con{
+    margin-bottom: 10%;
+}
+
+
+
+.myTabContent-footer ul li:nth-child(1){
+    font: 4.2rem 'fzlth--gb1-4';
+    color:#333333;
+}
+.myTabContent-footer ul li:nth-child(2){
+    font: 4.2rem 'fzlth--gbk1-0';
+    color: rgba(10, 206, 200, 0.25);
+    margin-top: 9%;
+}
+.myTabContent-footer ul li:nth-child(3){
+    font: 1.8rem 'fzlth--gb1-4';
+    color:#555555;
+    line-height: 24px;
+    padding: 5% 0;
+}
+.myTabContent-footer ul li:nth-child(4){
+    font: 1.8rem 'fzlth--gb1-4';
+    color:#555555;
+    line-height: 24px;
+}
+.myTabContent-footer ul li span{
+    margin-left: 5%;
+}
+.myTabContent-footer div:nth-child(2){
+    padding: 0 5%;
+}
+.myTabContent-footer{
+    margin-bottom: 10%;
+}
+
+
+
+
+
+/* 清除PC bootstrap手写样式 */
+@media screen and (max-width: 680px){ 
+    .myTabContent-con div:nth-child(2) ul{margin-left: 0%;}
+    .myTabContent-con div:nth-child(3) ul{margin-left: 0%;}
+    .myTabContent-con div:nth-child(3){text-align: left;}
+}

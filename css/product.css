@@ -1,0 +1,376 @@
+/* 公共样式 */
+*{margin: 0;padding: 0;}
+body{
+    font-family: 'fzlth--gb1-4';
+    font-size: 62.5%;
+    -webkit-text-size-adjust:none; 
+}
+ul,li{list-style: none;}
+.clear{clear: both;}
+
+/* banner */
+#banner{
+    width: 100%;
+    background: url('../img/product.png') no-repeat;
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+}
+#banner div li:nth-child(1){
+    font: 62px 'fzltchk--gbk1-0';
+}
+#banner div li:nth-child(2){
+    font: 36px 'simsun';
+    margin-top: 1%;
+}
+#banner div div>div{
+    margin-top: 7%;
+}
+
+
+
+#myTab a:hover{
+    background: transparent;
+    border: none;
+}
+#myTab a{
+    border: none;
+    font: 18px 'fzlth--gb1-4';
+    color:#252525;
+    margin: 0rem 2.5rem;
+}
+#myTab li:nth-child(1) a{
+    margin-left: 0rem;
+}
+#myTab li{
+    height: none;
+}
+#myTab .active>a{
+    border-bottom: 2px solid #0acec8;
+}
+
+
+#myTabContent .container{
+    margin: 4% auto;
+    text-align: center;
+}
+.myTabContent-top div:nth-child(1){
+    font: 36px 'fzlth--gb1-4';
+    color: #333333;
+}
+.myTabContent-top div:nth-child(2){
+    font: 24px 'fzlth--gb1-4';
+    color: #aaaaaa;
+    margin-top: 20px; 
+    margin-bottom: 4%;
+}
+.myTabContent-top i{
+    display: inline-block;
+    width: 16%;
+    height: 2px;
+    background: #0acec8;
+}
+.myTabContent-top>div i:nth-child(1){
+    margin-right: 4%;
+    margin-bottom: 10px;
+}
+.myTabContent-top>div i:nth-child(2){
+    margin-left: 4%;
+    margin-bottom: 10px;
+}
+
+/* 智慧班牌 */
+.home-top{
+    padding-bottom: 130px;
+}
+.home-top div:nth-child(2){
+    text-align: left;
+}
+.home-top div>h4{
+    font: 24px 'fzlth--gb1-4';
+    color: #333333;
+}
+.home-top div>p{
+    font: 16px 'fzlth--gb1-4';
+    color: #aaaaaa;
+    line-height: 30px;
+}
+.hom-con{
+    padding-top: 40px;
+    padding-bottom: 130px;
+}
+.product-footer{
+    text-align: left;
+}
+.product-footer h3{
+    display: inline-block;
+    font: 36px 'fzlth--gb1-4';
+    color: #555555;
+    margin: 0;
+}
+.product-footer i{
+    display: inline-block;
+    width: 14px;
+    height: 20px;
+    background: #555555;
+    border-radius: 2px;
+    margin-right: 1%;
+}
+.home-footer{
+    text-align: left;
+}
+.home-footer ul{
+    margin-top: 80px;
+}
+.home-footer ul li:nth-child(1){
+    font: 24px 'fzlth--gb1-4';
+    color: #0acec8;
+}
+.home-footer ul li:nth-child(2){
+    margin-top: 30px;
+    font: 18px 'fzlth--gb1-4';
+    color: #555555;
+}
+.home-footer ul:last-child{
+    margin-bottom: 130px;
+}
+.hom-footerImg img{
+    margin-top: 80px;
+}
+
+/* 走班排课 */
+.courseScheduling-top div:nth-child(2){
+    text-align: left;
+}
+.courseScheduling-top div:nth-child(2) h4{
+    font: 24px 'fzlth--gb1-4';
+    color: #333333;
+    margin-bottom: 30px;
+}
+.courseScheduling-top div:nth-child(2) p:nth-child(2){
+    color: #333333;
+}
+.courseScheduling-top div:nth-child(2) p{
+    font: 16px 'fzlth--gb1-4';
+    color: #aaaaaa;
+    line-height: 30px;
+}
+.courseScheduling-top div{
+    margin-bottom: 130px;
+}
+.courseScheduling-con p{
+    font: 16px 'fzlth--gb1-4';
+    color: #333333;
+    margin-top: 60px;
+    text-align: right;
+}
+.courseScheduling-con div{
+    margin-bottom: 130px;
+}
+.courseScheduling-con img{
+    width: 100%;
+}
+.courseScheduling-footer img{
+    margin-top: 6%;
+    margin-bottom: 10%;
+}
+#courseScheduling>div>div:last-child img{
+    margin-bottom: 6%;
+}
+
+/* 综合管理平台 */
+.intelligentClassCard-top>div{
+    margin-bottom: 10%;
+}
+.intelligentClassCard-top>div:nth-child(2){
+    text-align: left;
+}
+.intelligentClassCard-top>div h4{
+    font: 24px 'fzlth--gb1-4';
+    color: #333333;
+}
+.intelligentClassCard-top>div p{
+    font: 16px 'fzlth--gb1-4';
+    color: #aaaaaa;
+    line-height: 30px;
+}
+.intelligentClassCard-top img{
+    width: 100%;
+}
+.intelligentClassCard-con img{
+    margin-bottom: 3%;
+}
+.intelligentClassCard-office h4{
+    font: 24px 'fzlth--gb1-4';
+    color: #0acec8;
+    text-align: left;
+    margin-top: 4%;
+    margin-bottom: 6%;
+}
+.intelligentClassCard-office img{
+    margin-bottom: 10%;
+}
+.intelligentClassCard-teacher h4{
+    font: 24px 'fzlth--gb1-4';
+    color: #0acec8;
+    text-align: left;
+    margin-top: 4%;
+    margin-bottom: 6%;
+}
+.intelligentClassCard-teacher li{
+    list-style-type: disc;
+    margin-bottom: 6%;
+}
+.intelligentClassCard-teacher div:nth-child(2){
+    text-align: left;
+    font: 18px 'fzlth--gb1-4';
+    color: #555555;
+}
+.intelligentClassCard-teacher div:nth-child(3){
+    margin-bottom: 10%;
+}
+.intelligentClassCard-student h4{
+    font: 24px 'fzlth--gb1-4';
+    color: #0acec8;
+    text-align: left;
+    margin-top: 4%;
+    margin-bottom: 6%;
+}
+.intelligentClassCard-student li{
+    list-style-type: disc;
+    margin-bottom: 6%;
+}
+.intelligentClassCard-student div:nth-child(2){
+    text-align: left;
+    font: 18px 'fzlth--gb1-4';
+    color: #555555;
+}
+.intelligentClassCard-student div:nth-child(3){
+    margin-bottom: 10%;
+}
+.intelligentClassCard-parent h4{
+    font: 24px 'fzlth--gb1-4';
+    color: #0acec8;
+    text-align: left;
+    margin-top: 4%;
+    margin-bottom: 6%;
+}
+.intelligentClassCard-parent img{
+    margin-bottom: 4%;
+}
+
+/* 智能物联 */
+.intelligentPhysicalCouplet-top div:nth-child(2){
+    text-align: left;
+}
+.intelligentPhysicalCouplet-top div h4{
+    font: 24px 'fzlth--gb1-4';
+    color: #333333;
+}
+.intelligentPhysicalCouplet-top div p{
+    font: 16px 'fzlth--gb1-4';
+    color: #aaaaaa;
+    line-height: 30px;
+}
+.intelligentPhysicalCouplet-top div{
+    margin-bottom: 10%;
+}
+.intelligentPhysicalCouplet-top img{
+    width: 100%;
+}
+.intelligentPhysicalCouplet-con p{
+    text-align: left;
+    font: 18px 'fzlth--gb1-4';
+    color: #555555;
+    line-height: 30px;
+    margin-top: 2%;
+}
+.intelligentPhysicalCouplet-con ul{
+    margin-bottom: 10%;
+}
+.intelligentPhysicalCouplet-gateway div{
+    margin-top: 6%;
+    margin-bottom: 10%;
+}
+.intelligentPhysicalCouplet-gateway h4{
+    margin-top: 17%;
+    margin-bottom: 10%;
+    font: 24px 'fzlth--gb1-4';
+    color: #0acec8;
+}
+.intelligentPhysicalCouplet-gateway p{
+    font: 18px 'fzlth--gb1-4';
+    color: #555555;
+}
+#intelligentPhysicalCouplet .intelligentPhysicalCouplet-gateway:last-child div{
+    margin-bottom: 0%;
+}
+
+
+/* 微家校平台 */
+.homeSchoolPlatform-con img{
+    width: 100%;
+    margin-top: 2%;
+    margin-bottom: 6%;
+}
+.homeSchoolPlatform-footer ul{
+    text-align: left;
+    margin-top: 6%;
+}
+.homeSchoolPlatform-footer ul li{
+    font: 24px 'fzlth--gb1-4';
+    color: #0acec8;
+    margin-bottom: 1.5%;
+}
+.homeSchoolPlatform-footer ul p{
+    font: 18px 'fzlth--gb1-4';
+    color: #555555;
+    line-height: 30px;
+}
+.homeSchoolFooter div{
+    margin-top: 6%;
+}
+
+
+/* 清除PC bootstrap手写样式 */
+@media screen and (max-width: 680px){   
+    #banner div div>div{margin-top: 33%;}
+    #Tab{width: 100%;}
+    #Tab a{font-size: 15px;padding: 10px 5px;}
+    #myTab a{margin: 0rem .5rem;}
+    #myTab li:nth-child(1) a{
+        margin-left: 1rem;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    #myTabContent .container .row{
+        /* width: 1320px; */
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 1200px){
+    /* 智慧班牌 */
+    .home-top img{width: 100%;}
+    .hom-con img{width: 100%;}
+    .hom-footerImg img{width: 100%;}
+    /* 走班排课 */
+    .courseScheduling-top img{width: 100%;}
+    .courseScheduling-con img{width: 100%;}
+    .courseScheduling-con p{text-align: left;}
+    .courseScheduling-footer img{width: 100%;}
+    /* 综合管理平台 */
+    .intelligentClassCard-top img{width: 100%;}
+    .intelligentClassCard-con img{width: 100%;}
+    .intelligentClassCard-office img{width: 100%;}
+    .intelligentClassCard-teacher img{width: 100%;}
+    .intelligentClassCard-student img{width: 100%;}
+    .intelligentClassCard-parent img{width: 100%;}
+    /* 智能物联 */
+    .intelligentPhysicalCouplet-top img{width: 100%;}
+    .intelligentPhysicalCouplet-top div:nth-child(1){margin-bottom: 0%;}
+    .intelligentPhysicalCouplet-con img{width: 100%;}
+    /* 微家校平台 */
+    .homeSchoolPlatform-con img{width: 100%;}
+}

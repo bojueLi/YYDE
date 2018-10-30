@@ -1,0 +1,504 @@
+/* 公共样式 */
+*{margin: 0;padding: 0;}
+body{
+    font-family: 'fzlth--gb1-4';
+    font-size: 62.5%;
+}
+ul,li{list-style: none;}
+.clear{clear: both;}
+
+/* 引入字体 */
+@font-face { 
+    font-family: fzltchk--gbk1-0; /*这里是说明调用来的字体名字*/ 
+    src: url('../font/fzltchk--gbk1-0.ttf'); /*这里是字体文件路径*/ 
+} 
+@font-face { 
+    font-family: simsun; /*这里是说明调用来的字体名字*/ 
+    src: url('../font/simsun.ttf'); /*这里是字体文件路径*/ 
+} 
+@font-face { 
+    font-family: fzlth--gb1-4; /*这里是说明调用来的字体名字*/ 
+    src: url('../font/fzlth--gb1-4.ttf'); /*这里是字体文件路径*/ 
+} 
+@font-face { 
+    font-family: Calibri-Light; /*这里是说明调用来的字体名字*/ 
+    src: url('../font/Calibri-Light.ttf'); /*这里是字体文件路径*/ 
+} 
+
+/* 导航栏 */
+.navbar{
+    width: 100%;
+    height: 98px;
+    margin-bottom: 0;
+    font-size: 18px;
+    background: #ffffff;
+    position: fixed;
+    z-index:999;
+    top: 0;
+}
+.navbar-default .navbar-nav>li>a{
+    color: #000;
+}
+.nav>li>a{
+    margin: 5px 25px;
+    padding: 10px 0;
+}
+.nav>li:last-child  a{
+    margin: 5px 0 5px 25px;
+    padding: 10px 0;
+}
+.navbar-brand{
+    padding: 5px 15px;
+}
+.navbar-brand img{
+    width: 100%;
+}
+.container-fluid{
+    padding: 22px 0 0 0;
+}
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover{
+    background: none;
+}
+.dropdown-menu{
+    min-width: 122px;
+    padding: 0px;
+    background-color: #ffffff;
+}
+.dropdown-menu li a{
+    padding: 0px;
+    text-align: center;
+    line-height: 50px;
+}
+.dropdown-menu li a:hover{
+    background: #eefafa;
+}
+.navSolution .dropdown-menu{
+    min-width: 244px;
+    padding: 0px;
+    top: 100%;
+    background-color: #ffffff;
+    left: -55px;
+}
+.navSolution .dropdown-menu li{
+    width: 50%;
+    float: left;
+}
+.navbar-default .navbar-collapse, .navbar-default .navbar-form{
+    border-top: none;
+    background: #fff;
+}
+@media (min-width: 768px){
+    .navbar-nav {
+        float: right;
+        margin: 0;
+    }
+    .Nav>li{
+        height: 74px;
+        line-height: 74px;
+    }
+    .navbar-nav>li>a:after{
+        content: "";
+        width: 0;
+        height: 2px;
+        background: #0acec8;
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        transition: all .8s;
+    }
+    .navbar-nav>li>a:hover:after{
+       left: 0%;
+       width: 100%;
+    }
+    .Nav li:hover .dropdown-menu{
+        display: block;
+    }
+}
+@media (max-width: 767px){
+    .dropdown-menu{
+        min-width: 122px;
+        padding: 0px;
+        background-color: #ffffff;
+    }
+    .navbar{
+        height: 50px;
+    }
+    .container-fluid{
+        padding: 0;
+    }
+    .navbar-brand img{
+        width: 70%;
+        position: absolute;
+    }
+    .navSolution .dropdown-menu li a{
+        text-align: left;
+        margin-left: 5%;
+    }
+    .navbar-nav .open .dropdown-menu a{
+        text-align: left;
+        margin-left: 5%;
+    }
+    .navbar-nav{
+        margin: 0;
+    }
+    .nav>li>a{
+        margin: 5px 0;
+    }
+    .nav>li:last-child  a{
+        margin: 5px 0;
+    }
+    .navbar-default .navbar-collapse, .navbar-default .navbar-form{
+        border-bottom: 1px solid #e7e7e7;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 1250px){
+    .navbar-brand img{
+        width: 70%;
+        display: inline-block;
+    }
+    .navbar-header .navbar-brand{
+        position: absolute;
+    }
+}
+
+/* banner */
+#banner{
+    width: 100%;
+    height: 400px;
+    color: #fff;
+    text-align: center;
+    margin-top: 8rem;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+#banner div li:nth-child(1){
+    font: 62px 'fzltchk--gbk1-0';
+}
+#banner div li:nth-child(2){
+    font: 36px 'simsun';
+    margin-top: 1%;
+}
+#banner div div>div{
+    margin-top: 7%;
+}
+/* 选项卡 */
+.nav-tabs{
+    margin-top: 5%;
+}
+#myTab a:hover{
+    background: transparent;
+    border: none;
+}
+#myTab a{
+    border: none;
+    font: 18px 'fzlth--gb1-4';
+    color:#252525;
+    margin: 0rem 2.5rem;
+}
+#myTab li:nth-child(1) a{
+    margin-left: 0rem;
+}
+#myTab li{
+    height: none;
+}
+#myTab .active>a{
+    border-bottom: 2px solid #0acec8;
+}
+#myTabContent .container{
+    margin: 5% auto;
+    text-align: center;
+}
+.myTabContent-top div:nth-child(1){
+    font: 36px 'fzlth--gb1-4';
+    color: #333333;
+}
+.myTabContent-top div:nth-child(2){
+    font: 24px 'fzlth--gb1-4';
+    color: #aaaaaa;
+    margin-top: 20px; 
+    margin-bottom: 4%;
+}
+.myTabContent-top i{
+    display: inline-block;
+    width: 16%;
+    height: 2px;
+    background: #0acec8;
+}
+.myTabContent-top>div i:nth-child(1){
+    margin-right: 4%;
+    margin-bottom: 10px;
+}
+.myTabContent-top>div i:nth-child(2){
+    margin-left: 4%;
+    margin-bottom: 10px;
+}
+
+/* 标题样式 */
+.top-title div:nth-child(1){
+    font: 36px 'fzlth--gb1-4';
+    color: #333333;
+    margin-top: 6%;
+}
+.top-title div:nth-child(2){
+    font: 24px 'fzlth--gb1-4';
+    color: #aaaaaa;
+    margin-top: 20px; 
+    margin-bottom: 4%;
+}
+.top-title div{
+    text-align: center;
+}
+.top-title i{
+    display: inline-block;
+    width: 16%;
+    height: 2px;
+    background: #0acec8;
+}
+.top-title div i:nth-child(1){
+    margin-right: 4%;
+    margin-bottom: 10px;
+}
+.top-title div i:nth-child(2){
+    margin-left: 4%;
+    margin-bottom: 10px;
+}
+
+
+
+
+/* 左侧导航栏 */
+.leftNav{
+    width: 158px;
+    height: 510px;
+    border: 1px solid #0acec8;
+    font: 14px 'fzlth--gb1-4';
+    color: #555555;
+    position: fixed;
+    z-index: 10;
+    left: 5%;
+    top: 50%;
+    margin-top: -249px;
+    background: #fff;
+    display: none;
+}
+.leftNav a{
+    text-decoration: none;
+    color: #555555;
+}
+.leftNav li{
+    text-align: center;
+    line-height: 50px;
+    border-top: 1px solid #0acec8;
+}
+.leftNav a:first-child li{
+    border-top: none;
+}
+.leftNav li:hover{
+    background: #0acec8;
+    color: white;
+}
+
+
+
+
+
+/* 尾部 */
+.footer{
+    width: 100%;
+    background: #262626;
+    padding: 4% 0;
+}
+#footer>.row{
+    margin: 0 auto;
+}
+.footer-left div{
+    margin: 3% 0;
+}
+.footer-left{
+    border-right: 1px solid #aaaaaa;
+}
+.footer-left div>span:nth-child(1){
+    font: 1.8rem 'fzlth--gb1-4';
+    color: #fff;
+}
+.footer-left div{
+    display: flex;
+}
+.footer-left div ul{
+    display: inline-block;
+    flex: 7.5;
+    line-height: 26px;
+    margin: 0;
+}
+.footer-left div ul>span{
+    color: #aaaaaa;
+    display: inline-block;
+    padding: 0 2%;
+}
+.footer-left div ul a{
+    font: 14px 'fzlth--gb1-4';
+    margin: 0 1%;
+    color: #7b7b7b;
+}
+.footer-left div>span{
+    flex: 2.5;
+}
+.footer-left div ul a{
+    text-decoration: none;
+}
+.footer-left div ul a:hover{
+    color: #fff;
+}
+.footer-right div{
+    display: flex;
+    margin-top: 5%;
+}
+.footer-right div>div{
+    flex: 2;
+}
+.footer-right div ul{
+    flex: 4;
+}
+.footer-right .footer-l li:nth-child(1){
+    font: 18px 'fzlth--gb1-4';
+    margin: 7% 0;
+    color: #fff;
+}
+.footer-right .footer-l li{
+    font: 14px 'fzlth--gb1-4';
+    color: #aaaaaa;
+    margin: 10% 0;
+}
+.footer-right .footer-r li{
+    font: 16px 'fzlth--gb1-4';
+    color: #fff;
+}
+.footer-r{margin-left: 5%;}
+.footer-right div ul img{
+    width: 40%;
+    margin: 6% 0;
+}
+
+/* 版权 */
+#copyright{
+    width: 100%;
+    background: black;
+    font: 12px 'fzlth--gb1-4';
+    color: #aaaaaa;
+}
+.copyright-con{
+    width: 76%;
+    margin: 1% auto;
+    text-align: center;
+}
+/* 侧边悬浮 */
+.scroll{
+    width: 60px;
+    height: 200px;
+    position: fixed;
+    right: 50px;
+    bottom: 200px;
+    z-index: 99999;
+    /* bottom: 428px; */
+    bottom: 200px;
+}
+.scroll>li{
+    width: 100%;
+    height: 60px;
+}
+.scroll>li:nth-child(1) a{
+    display: inline-block;
+    width: 100%;
+    height: 60px;
+}
+.scroll>li:nth-child(1){
+    background: url('../img/QQ.png') no-repeat;
+}
+.scroll>li:nth-child(1):hover{
+    background: url('../img/QQ-active.png') no-repeat;
+}
+.scroll .wechat{
+    margin: 10px 0;
+    background: url('../img/wechat.png') no-repeat;
+    position: relative;
+}
+.scroll .wechat:hover{
+    background: url('../img/wechat-active.png') no-repeat;
+}
+.scroll .wechat ul{
+    position: absolute;
+    width: 176px;
+    height: 106px;
+    border: 2px solid #eeeeee;
+    right: 60px;
+    background: #ffffff;
+    display: none;
+}
+.scroll .wechat:hover ul{
+    display: block;
+}
+.scroll .wechat ul li{
+    width: 50%;
+    float: left;
+}
+.scroll .wechat ul li:nth-child(1) img{
+    margin: 14px 0 0 10px;
+}
+.scroll .wechat ul li:nth-child(2) img{
+    margin: 14px 0 0 12px;
+}
+.scroll .wechat ul li p{
+    font: 10px 'fzlth--gb1-4';
+    color: #555555;
+    text-align: center;
+}
+.scroll .wechat ul img{
+    width: 64px;
+    height: 64px;
+}
+.scroll .scroll_top{
+    background: url('../img/top.png') no-repeat;
+}
+.scroll .scroll_top:hover{
+    background: url('../img/top-active.png') no-repeat;
+}
+
+
+
+/* 清除PC bootstrap手写样式 */
+@media screen and (max-width: 680px){ 
+    #banner{margin-top: 4rem;}
+    #banner div div>div{margin-top: 33%;}
+    #footer{width: 100%;}
+    #footer>.row{width: 100%;}
+    .footer-right div>div{flex: 0;}
+    .copyright-con{width: 100%;}
+    #Tab{width: 100%;}
+    #Tab a{font-size: 15px;padding: 10px 5px;}
+    #myTab a{margin: 0rem .5rem;}
+    #myTab li:nth-child(1) a{
+        margin-left: 1rem;
+    }
+    .footer-left{border: none;}
+    .scroll{display: none;}
+}
+@media screen and (min-width: 1200px){
+    .container{
+        /* width: 1320px; */
+        padding: 0;
+    }
+    .nav-tabs{
+        margin-top: 5%;
+    }
+    .myTabContent .row{
+        margin: 0;
+    }
+}
+
+/* bootstrap 5份平分样式 */
+@media screen and (min-width: 680px){ 
+    .col-zdlg-2-5{
+        float: left;
+        width:20%;
+    }
+}

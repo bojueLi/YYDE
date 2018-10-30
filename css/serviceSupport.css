@@ -1,0 +1,120 @@
+#banner{
+    background: url('../img/serviceSupport.png') no-repeat;
+    background-size: cover;
+}
+/* 主体内容 */
+#myTabContent .container{
+    margin: 80px auto;
+}
+#myTabContent{
+    margin-bottom: 130px;
+}
+.myTabContent .service img{
+    width: 580px;
+    height: 360px;
+    border-radius: 5px;
+}
+.service div:nth-child(2){
+    padding-left: 80px;
+}
+.service ul li:nth-child(1){
+    font: 4.2rem 'fzlth--gb1-4';
+    color:#333333;
+    margin: 50px 0;
+}
+.service ul li:nth-child(2){
+    font: 4.2rem 'fzlth--gb1-4';
+    color:#CEEDEC;
+}
+.service ul li:nth-child(3){
+    font: 4.2rem 'fzlth--gbk1-0';
+    color:#CEEDEC;
+    margin: 14px 0;
+}
+.service ul li:nth-child(4){
+    font: 1.4rem 'fzlth--gb1-4';
+    color:#555555;
+    line-height: 20px;
+}
+.myTabContent .myTabContent-top{
+    margin-top: 13.33rem; 
+}
+.service-con ul{
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px #B0EAE6;
+    padding: 15% 0;
+}
+.service-con ul img{
+    margin-bottom: 8%;
+}
+.service-con ul li{
+    font: 1.8rem 'fzlth--gb1-4';
+    color:#555555;
+    text-align: center
+}
+
+/* 下载专区 */
+.download-con ul{
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px #B0EAE6;
+    padding: 15% 8%;
+}
+.download-con ul img{
+    width: 192px;
+    height: 108px;
+}
+.download-con ul li{
+    display: inline-block;
+    width: 150px;
+    height: 46px;
+    border-radius: 5px;
+    font: 1.8rem 'fzlth--gb1-4';
+    color:#ffffff;
+    background: #5490EA;
+    padding: 13px 0;
+    margin-top: 50px;
+}
+
+/* 常见问题 */
+#operation .operation-con>div{
+    text-align: left;
+    margin-top: 40px;
+}
+#operation .operation-con>div:nth-child(1){
+    margin-top: 0;
+}
+#operation li{
+    font: 1.6rem 'fzlth--gb1-4';
+    color:#555555;
+    font-weight: bold;
+}
+#operation span{
+    font: 1.4rem 'fzlth--gb1-4';
+    color:#777777;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+
+
+
+/* 清除PC bootstrap手写样式 */
+@media screen and (max-width: 680px){ 
+    #myTabContent .container{
+        margin: 40px auto;
+    }
+    .myTabContent .service img{
+        width: 100%;
+        height: 360px;
+        border-radius: 5px;
+    }
+    .service div:nth-child(2){
+        padding-left: 15px;
+    }
+    .myTabContent-top{
+        margin-top: 3.33rem; 
+    }
+    .service-con ul{
+        padding: 18% 0;
+    }
+}

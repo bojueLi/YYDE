@@ -1,0 +1,100 @@
+#banner{
+    background: url('../img/solution.png') no-repeat;
+    background-size: cover;
+}
+.myTabContent{
+    text-align: center;
+    margin-bottom: 6%;
+}
+.myTabContent .myTabContent-top{
+    margin-top: 6%;
+}
+
+/* 校园信息发布 */
+.campusInformationRelease-top p{
+    font: 18px 'fzlth--gb1-4';
+    color: #555555;
+    text-align: left;
+    line-height: 30px;
+    margin-top: 2%;
+    margin-bottom: 8%;
+}
+.private img{
+    width: 100%;
+}
+.campusInformationRelease-con div:nth-child(1){
+    text-align: left;
+}
+.campusInformationRelease-con div:nth-child(3){
+    text-align: right;
+}
+.container .campusInformationRelease-con{
+    margin-bottom: 10%;
+}
+.campusInformationRelease-footer{
+    text-align: left;
+}
+.campusInformationRelease-footer h3{
+    display: inline-block;
+    font: 36px 'fzlth--gb1-4';
+    color: #555555;
+    margin: 0;
+}
+.campusInformationRelease-footer i{
+    display: inline-block;
+    width: 14px;
+    height: 20px;
+    background: #555555;
+    border-radius: 2px;
+    margin-right: 1%;
+}
+.campusInformationRelease-footer ul{
+    margin-top: 6%;
+}
+.campusInformationRelease-footer ul li:nth-child(1){
+    font: 24px 'fzlth--gb1-4';
+    color: #0acec8;
+}
+.campusInformationRelease-footer ul li:nth-child(2){
+    font: 18px 'fzlth--gb1-4';
+    color: #555555;
+    margin-top: 2%;
+}
+
+
+/* 走班排课 */
+.courseScheduling-con img{
+    text-align: center;
+}
+
+/* 智能管理 */
+.wisdomMan-con img{
+    width: 100%;
+    margin-bottom: 8%;
+}
+
+
+/* 左侧导航栏 */
+/* .leftNav a:nth-child(1) li{
+    color: white;
+    background: #0acec8;
+} */
+
+
+
+@media screen and (min-width: 120px){ 
+    .campusInformationRelease-con div img{width: 100%;}
+    .courseScheduling-con img{width: 100%;}
+}
+
+
+@media screen and (max-width: 680px){ 
+    .campusInformationRelease-top img{width: 100%;}
+    .campusInformationRelease-con div img{width: 100%;}
+    .wisdomMan-con img{
+        margin-bottom: 8%;
+        width: 100%;
+    }
+    /* 手机左侧导航消失 */
+    .leftNav{display: none;}
+}
